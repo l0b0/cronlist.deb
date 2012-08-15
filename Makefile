@@ -8,14 +8,14 @@ package_url = https://github.com/l0b0/$(package_name)/tarball/v$(package_version
 
 all: deb
 
-$(package_dir)/debian: $(package_dir)
-	cd $(package_dir) && yes | dh_make --copyright gpl3 --single
+$(package_file):
+	wget -O $(package_file) $(package_url)
 
 $(package_dir): $(package_file)
 	tar -zxvf $(package_file) --transform 's#^[^/]*#$(package_dir)#'
 
-$(package_file):
-	wget -O $(package_file) $(package_url)
+$(package_dir)/debian: $(package_dir)
+	cd $(package_dir) && yes | dh_make --copyright gpl3 --single
 
 $(package_name).deb: $(package_dir)/debian
 
