@@ -22,7 +22,7 @@ $(package_name).deb: $(package_dir)/debian
 deb: $(package_name).deb
 	false
 
-test: compile
+test:
 	false
 
 clean:
