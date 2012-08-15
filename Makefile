@@ -4,7 +4,7 @@ package_dir = $(package_name)-$(package_version)
 package_file = $(package_name)_$(package_version).orig.tar.gz
 package_url = https://github.com/l0b0/$(package_name)/tarball/v$(package_version)
 
-.PHONY: all compile test
+.PHONY: all test clean
 
 all: deb
 
