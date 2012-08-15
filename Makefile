@@ -4,7 +4,7 @@ package_dir = $(package_name)-$(package_version)
 package_file = $(package_name)_$(package_version).orig.tar.gz
 package_url = https://github.com/l0b0/$(package_name)/tarball/v$(package_version)
 
-.PHONY: all test clean
+.PHONY: all deb test clean
 
 all: deb
 
@@ -16,6 +16,11 @@ $(package_dir): $(package_file)
 
 $(package_file):
 	wget -O $(package_file) $(package_url)
+
+$(package_name).deb: $(package_dir)/debian
+
+deb: $(package_name).deb
+	false
 
 test: compile
 	false
