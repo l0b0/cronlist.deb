@@ -1,15 +1,18 @@
 Source: cronlist
-Section: unknown
-Priority: extra
+Section: admin
+Priority: optional
 Maintainer: Victor Engmark <victor@engmark.name>
 Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.2
-Homepage: <insert the upstream URL, if relevant>
-#Vcs-Git: git://git.debian.org/collab-maint/cronlist.git
-#Vcs-Browser: http://git.debian.org/?p=collab-maint/cronlist.git;a=summary
+Homepage: https://github.com/l0b0/cronlist
+Vcs-Git: git://github.com/l0b0/cronlist.deb.git
+Vcs-Browser: https://github.com/l0b0/cronlist.deb
 
 Package: cronlist
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Depends: ${shlibs:Depends}, ${misc:Depends}, cron | cron-daemon
+Description: lists cron actions chronologically
+ By default, the next ten actions which will be run are printed, based on the
+ system and user crontabs. Options include the start time, end time, how many
+ actions should be printed, and whether to print only based on the system or
+ user crontab.
