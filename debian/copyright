@@ -1,0 +1,24 @@
+Format: http://dep.debian.net/deps/dep5
+Upstream-Name: cronlist
+Upstream-Contact: https://github.com/l0b0/cronlist
+Source: https://github.com/l0b0/cronlist
+Copyright: 2012 Carlos H <angus@quovadis.com.ar>
+Copyright: 2012 Victor Engmark <victor@engmark.name>
+License: GPL-3.0+
+
+Files: *
+Copyright: 2012 Victor Engmark <victor@engmark.name>
+License: GPL-3.0+
+
+Files: cronlist.c
+Copyright: 2012 Carlos H <angus@quovadis.com.ar>
+License: GPL-3.0+
+
+Files: Makefile
+Copyright: 2012 Carlos H <angus@quovadis.com.ar>
+Copyright: 2012 Victor Engmark <victor@engmark.name>
+License: GPL-3.0+
+
+Files: debian/*
+Copyright: 2012 Victor Engmark <victor@engmark.name>
+License: GPL-3.0+

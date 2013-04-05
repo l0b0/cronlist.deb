@@ -1,0 +1,5 @@
+cronlist (0.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Victor Engmark <victor@engmark.name>  Thu, 16 Aug 2012 15:14:03 +0200

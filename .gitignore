@@ -1,2 +1,4 @@
 cronlist-*/
 *.orig.tar.gz
+/cronlist
+*.swp
